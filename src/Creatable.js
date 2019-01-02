@@ -55,7 +55,7 @@ const builtins = {
       selectValue.some(option => compareOption(inputValue, option)) ||
       selectOptions.some(option => compareOption(inputValue, option))
     ),
-  getNewOptionData: (inputValue: string, optionLabel: string) => ({
+  getNewOptionData: (inputValue: string, optionLabel: Node) => ({
     label: optionLabel,
     value: inputValue,
     __isNew__: true,
